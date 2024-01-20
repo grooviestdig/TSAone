@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+</head>
+<body>
+    <h1>Brian Gabriel A. Portiles   </h1>
+    <p> Email: portiles.brian@gmail.com</p>
+    <p>Phone : 09683047086 </p>
+    
+    <h2>Education</h2>
+    <p><strong>Primary:</strong></p>
+    <sub>Rivera Village Elementary School</sub>
+
+    <p><strong>Secondary:</strong></p>
+    <sub>Sto. Nino National Highschool</sub>
+
+    <p><strong>Tertiary:</strong></p>
+    <sub>FEU Institute of Technology</sub>
+
+    <h3>Skills</h3>
+    <p>Good in Communication Skills</p>
+    <p>Multitasking</p>  
+
+    <button id="colorChangeButton" onclick="changeColors()">Change Colors</button>
+</body>
+<script>
+    function changeColors() {
+        const body = document.body;
+
+        const randomColor = () => Math.floor(Math.random() * 256);
+        const bgColor = `rgb(${randomColor()}, ${randomColor()}, ${randomColor()})`;
+
+        
+        const textColor = `rgb(${255 - randomColor()}, ${255 - randomColor()}, ${255 - randomColor()})`;
+
+        body.style.backgroundColor = bgColor;
+        body.style.color = textColor;
+    }
+    changeColors();
+</script>
+
+
+
+
+</html>
